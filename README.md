@@ -1,9 +1,10 @@
 
-<p align="center">
-  <img src="bm-lab-logo-white.jpg" alt="BM LABS Logo" width="200"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="chip_foundry_logo.png" alt="Chipfoundry Logo" width="200"/>
-</p>
+<table>
+  <tr>
+    <td align="center"><img src="bm-lab-logo-white.jpg" alt="BM LABS Logo" width="200"/></td>
+    <td align="center"><img src="chip_foundry_logo.png" alt="Chipfoundry Logo" width="200"/></td>
+  </tr>
+</table>
 
 
 # Neuromorphic X1 – Analog In-Memory Compute IP Macro
