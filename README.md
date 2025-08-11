@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="bm-lab-logo-white.png" alt="BM LABS Logo" width="200"/>
+  <img src="bm-lab-logo-white.jpg" alt="BM LABS Logo" width="200"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="chip_foundry_logo.png" alt="Chipfoundry Logo" width="200"/>
 </p>
