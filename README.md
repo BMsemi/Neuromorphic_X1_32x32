@@ -1,4 +1,4 @@
-![BM LABS Logo](bm-lab-logo-white.png)    ![Chipfoundry Logo](chip_foundry_logo.png)
+![BM LABS Logo](bm-lab-logo-white.jpg)    ![Chipfoundry Logo](chip_foundry_logo.png)
 
 # Neuromorphic X1 – Analog In-Memory Compute IP Macro
 
