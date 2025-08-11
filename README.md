@@ -1,4 +1,10 @@
-![BM LABS Logo](bm-lab-logo-white.jpg)    ![Chipfoundry Logo](chip_foundry_logo.png)
+
+<p align="center">
+  <img src="bm-lab-logo-white.png" alt="BM LABS Logo" width="200"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="chip_foundry_logo.png" alt="Chipfoundry Logo" width="200"/>
+</p>
+
 
 # Neuromorphic X1 – Analog In-Memory Compute IP Macro
 
