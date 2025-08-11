@@ -1,3 +1,5 @@
+![BM LABS Logo](bm-lab-logo-white.png)    ![Chipfoundry Logo](chip_foundry_logo.png)
+
 # Neuromorphic X1 – Analog In-Memory Compute IP Macro
 
 Neuromorphic X1 is a **compact, ultra-efficient analog in-memory compute (AiMC) IP macro** featuring a **32 × 32 1T1R crossbar** for low-power matrix operations—ideal for edge AI and embedded IoT deployments.  
