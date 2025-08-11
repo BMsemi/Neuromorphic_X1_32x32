@@ -1,7 +1,7 @@
 vlib work
 vmap work work
 
-vlog +acc +sv wishbone_slave_interface.sv NEUROMORPHIC_X1_macro.sv NEUROMORPHIC_X1.sv ReRAM_Wishbone_Interface.sv tb_ReRAM_Wishbone_Interface.sv
+vlog +acc +sv wishbone_slave_interface.v NEUROMORPHIC_X1_macro.v NEUROMORPHIC_X1.v ReRAM_Wishbone_Interface.v tb_ReRAM_Wishbone_Interface.v
 
 vsim work.tb_ReRAM_Wishbone_Interface
 
