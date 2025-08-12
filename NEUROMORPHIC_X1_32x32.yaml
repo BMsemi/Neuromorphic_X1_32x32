@@ -1,7 +1,7 @@
 info:
   name: Neuromorphic_X1
   description: Commercial 32x32 1T1R Analog In-Memory Compute Macro
-  repo: https://github.com/YOUR_ORG/Neuromorphic_X1.git
+  repo: https://github.com/BMsemi/Neuromorphic_X1_main
   owner: BM LABS
   license: Apache-2.0
   author: BM LABS
@@ -19,8 +19,8 @@ info:
     - WB
   type: hard
   status: verified
-  width: 760.000   # update if you have exact macro width in μm
-  height: 948.000 # update if you have exact macro height in μm
+  width: 760.000   # macro width in μm
+  height: 948.000 # macro height in μm
   technology: sky130
   digital_supply_voltage: 1.8
   analog_supply_voltage: 1.8
