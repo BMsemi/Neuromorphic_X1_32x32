@@ -34,6 +34,17 @@ It is optimized for:
 - **Target Applications:** TinyML, sensing, embedded AI inference  
 - **Benefits:** High energy efficiency, low latency, small area footprint
 
+## 📷 Process to Write to ReRAM CIM
+
+![Process to Write to ReRAM CIM](doc/Process_to_write_to_ReRAM_CIM.png)
+
+**Figure Explanation:**  
+This diagram illustrates the **data write process** to the Neuromorphic X1’s **32×32 ReRAM crossbar** via a **Wishbone interface**.  
+- **1 page = 4 bytes** (one wordline)  
+- Data packets (P1–P5) are transferred from the Wishbone bus to the **page buffer**  
+- From the buffer, data is written into the corresponding rows and columns of the ReRAM crossbar  
+- Each write cycle takes approximately **10 µs per page**, enabling fast updates while maintaining energy efficiency
+
 ---
 
 **Source:** [Neuromorphic X1 – bmsemi.io](https://bmsemi.io/commercial-neuromorphic-x1.html)
