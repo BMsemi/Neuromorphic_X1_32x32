@@ -1,874 +1,873 @@
 VERSION 5.7 ;
+NOWIREEXTENSIONATPIN ON ;
 BUSBITCHARS "[]" ;
 DIVIDERCHAR "/" ;
-
 MACRO BM130_NEURO_32X32
-  CLASS BLOCK
   ORIGIN 0 0 ;
   FOREIGN BM130_NEURO_32X32 0 0 ;
   SIZE 760 BY 950 ;
-  PIN DI[0]
+  PIN wbs_we_i
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 253.205 0 253.505 1 ;
+        RECT 146.53 0 146.83 2.91 ;
     END
-  END DI[0]
-  PIN DI[31]
+  END wbs_we_i
+  PIN wbs_dat_i[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 476.405 0 476.705 1 ;
+        RECT 253.205 0 253.505 2.91 ;
     END
-  END DI[31]
-  PIN DI[30]
+  END wbs_dat_i[0]
+  PIN wbs_dat_i[31]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 469.205 0 469.505 1 ;
+        RECT 476.405 0 476.705 2.91 ;
     END
-  END DI[30]
-  PIN DI[29]
+  END wbs_dat_i[31]
+  PIN wbs_dat_i[30]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 462.005 0 462.305 1 ;
+        RECT 469.205 0 469.505 2.91 ;
     END
-  END DI[29]
-  PIN DI[28]
+  END wbs_dat_i[30]
+  PIN wbs_dat_i[29]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 454.805 0 455.105 1 ;
+        RECT 462.005 0 462.305 2.91 ;
     END
-  END DI[28]
-  PIN DI[27]
+  END wbs_dat_i[29]
+  PIN wbs_dat_i[28]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 447.605 0 447.905 1 ;
+        RECT 454.805 0 455.105 2.91 ;
     END
-  END DI[27]
-  PIN DI[26]
+  END wbs_dat_i[28]
+  PIN wbs_dat_i[27]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 440.405 0 440.705 1 ;
+        RECT 447.605 0 447.905 2.91 ;
     END
-  END DI[26]
-  PIN DI[25]
+  END wbs_dat_i[27]
+  PIN wbs_dat_i[26]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 433.205 0 433.505 1 ;
+        RECT 440.405 0 440.705 2.91 ;
     END
-  END DI[25]
-  PIN DI[24]
+  END wbs_dat_i[26]
+  PIN wbs_dat_i[25]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 426.005 0 426.305 1 ;
+        RECT 433.205 0 433.505 2.91 ;
     END
-  END DI[24]
-  PIN DI[23]
+  END wbs_dat_i[25]
+  PIN wbs_dat_i[24]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 418.805 0 419.105 1 ;
+        RECT 426.005 0 426.305 2.91 ;
     END
-  END DI[23]
-  PIN DI[22]
+  END wbs_dat_i[24]
+  PIN wbs_dat_i[23]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 411.605 0 411.905 1 ;
+        RECT 418.805 0 419.105 2.91 ;
     END
-  END DI[22]
-  PIN DI[21]
+  END wbs_dat_i[23]
+  PIN wbs_dat_i[22]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 404.405 0 404.705 1 ;
+        RECT 411.605 0 411.905 2.91 ;
     END
-  END DI[21]
-  PIN DI[20]
+  END wbs_dat_i[22]
+  PIN wbs_dat_i[21]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 397.205 0 397.505 1 ;
+        RECT 404.405 0 404.705 2.91 ;
     END
-  END DI[20]
-  PIN DI[19]
+  END wbs_dat_i[21]
+  PIN wbs_dat_i[20]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 390.005 0 390.305 1 ;
+        RECT 397.205 0 397.505 2.91 ;
     END
-  END DI[19]
-  PIN DI[18]
+  END wbs_dat_i[20]
+  PIN wbs_dat_i[19]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 382.805 0 383.105 1 ;
+        RECT 390.005 0 390.305 2.91 ;
     END
-  END DI[18]
-  PIN DI[17]
+  END wbs_dat_i[19]
+  PIN wbs_dat_i[18]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 375.605 0 375.905 1 ;
+        RECT 382.805 0 383.105 2.91 ;
     END
-  END DI[17]
-  PIN DI[16]
+  END wbs_dat_i[18]
+  PIN wbs_dat_i[17]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 368.405 0 368.705 1 ;
+        RECT 375.605 0 375.905 2.91 ;
     END
-  END DI[16]
-  PIN DI[15]
+  END wbs_dat_i[17]
+  PIN wbs_dat_i[16]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 361.205 0 361.505 1 ;
+        RECT 368.405 0 368.705 2.91 ;
     END
-  END DI[15]
-  PIN DI[14]
+  END wbs_dat_i[16]
+  PIN wbs_dat_i[15]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 354.005 0 354.305 1 ;
+        RECT 361.205 0 361.505 2.91 ;
     END
-  END DI[14]
-  PIN DI[13]
+  END wbs_dat_i[15]
+  PIN wbs_dat_i[14]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 346.805 0 347.105 1 ;
+        RECT 354.005 0 354.305 2.91 ;
     END
-  END DI[13]
-  PIN DI[12]
+  END wbs_dat_i[14]
+  PIN wbs_dat_i[13]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 339.605 0 339.905 1 ;
+        RECT 346.805 0 347.105 2.91 ;
     END
-  END DI[12]
-  PIN DI[11]
+  END wbs_dat_i[13]
+  PIN wbs_dat_i[12]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 332.405 0 332.705 1 ;
+        RECT 339.605 0 339.905 2.91 ;
     END
-  END DI[11]
-  PIN DI[10]
+  END wbs_dat_i[12]
+  PIN wbs_dat_i[11]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 325.205 0 325.505 1 ;
+        RECT 332.405 0 332.705 2.91 ;
     END
-  END DI[10]
-  PIN DI[9]
+  END wbs_dat_i[11]
+  PIN wbs_dat_i[10]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 318.005 0 318.305 1 ;
+        RECT 325.205 0 325.505 2.91 ;
     END
-  END DI[9]
-  PIN DI[8]
+  END wbs_dat_i[10]
+  PIN wbs_dat_i[9]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 310.805 0 311.105 1 ;
+        RECT 318.005 0 318.305 2.91 ;
     END
-  END DI[8]
-  PIN DI[7]
+  END wbs_dat_i[9]
+  PIN wbs_dat_i[8]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 303.605 0 303.905 1 ;
+        RECT 310.805 0 311.105 2.91 ;
     END
-  END DI[7]
-  PIN DI[6]
+  END wbs_dat_i[8]
+  PIN wbs_dat_i[7]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 296.405 0 296.705 1 ;
+        RECT 303.605 0 303.905 2.91 ;
     END
-  END DI[6]
-  PIN DI[5]
+  END wbs_dat_i[7]
+  PIN wbs_dat_i[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 289.205 0 289.505 1 ;
+        RECT 296.405 0 296.705 2.91 ;
     END
-  END DI[5]
-  PIN DI[4]
+  END wbs_dat_i[6]
+  PIN wbs_dat_i[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 282.005 0 282.305 1 ;
+        RECT 289.205 0 289.505 2.91 ;
     END
-  END DI[4]
-  PIN DI[3]
+  END wbs_dat_i[5]
+  PIN wbs_dat_i[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 274.805 0 275.105 1 ;
+        RECT 282.005 0 282.305 2.91 ;
     END
-  END DI[3]
-  PIN DI[2]
+  END wbs_dat_i[4]
+  PIN wbs_dat_i[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 267.605 0 267.905 1 ;
+        RECT 274.805 0 275.105 2.91 ;
     END
-  END DI[2]
-  PIN DI[1]
+  END wbs_dat_i[3]
+  PIN wbs_dat_i[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 260.405 0 260.705 1 ;
+        RECT 267.605 0 267.905 2.91 ;
     END
-  END DI[1]
-  PIN AD[0]
+  END wbs_dat_i[2]
+  PIN wbs_adr[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 8.335 0 8.635 1 ;
+        RECT 11.935 0 12.235 2.91 ;
     END
-  END AD[0]
-  PIN AD[31]
+  END wbs_adr[1]
+  PIN wbs_adr[8]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 119.935 0 120.235 1 ;
+        RECT 37.135 0 37.435 2.91 ;
     END
-  END AD[31]
-  PIN AD[30]
+  END wbs_adr[8]
+  PIN wbs_adr[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 116.335 0 116.635 1 ;
+        RECT 15.535 0 15.835 2.91 ;
     END
-  END AD[30]
-  PIN AD[29]
+  END wbs_adr[2]
+  PIN wbs_adr[28]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 112.735 0 113.035 1 ;
+        RECT 109.135 0 109.435 2.91 ;
     END
-  END AD[29]
-  PIN AD[28]
+  END wbs_adr[28]
+  PIN wbs_adr[27]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 109.135 0 109.435 1 ;
+        RECT 105.535 0 105.835 2.91 ;
     END
-  END AD[28]
-  PIN AD[27]
+  END wbs_adr[27]
+  PIN wbs_adr[26]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 105.535 0 105.835 1 ;
+        RECT 101.935 0 102.235 2.91 ;
     END
-  END AD[27]
-  PIN AD[26]
+  END wbs_adr[26]
+  PIN wbs_adr[25]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 101.935 0 102.235 1 ;
+        RECT 98.335 0 98.635 2.91 ;
     END
-  END AD[26]
-  PIN AD[25]
+  END wbs_adr[25]
+  PIN wbs_adr[24]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 98.335 0 98.635 1 ;
+        RECT 94.735 0 95.035 2.91 ;
     END
-  END AD[25]
-  PIN AD[24]
+  END wbs_adr[24]
+  PIN wbs_adr[23]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 94.735 0 95.035 1 ;
+        RECT 91.135 0 91.435 2.91 ;
     END
-  END AD[24]
-  PIN AD[23]
+  END wbs_adr[23]
+  PIN wbs_adr[22]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 91.135 0 91.435 1 ;
+        RECT 87.535 0 87.835 2.91 ;
     END
-  END AD[23]
-  PIN AD[22]
+  END wbs_adr[22]
+  PIN wbs_adr[21]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 87.535 0 87.835 1 ;
+        RECT 83.935 0 84.235 2.91 ;
     END
-  END AD[22]
-  PIN AD[21]
+  END wbs_adr[21]
+  PIN wbs_adr[20]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 83.935 0 84.235 1 ;
+        RECT 80.335 0 80.635 2.91 ;
     END
-  END AD[21]
-  PIN AD[20]
+  END wbs_adr[20]
+  PIN wbs_adr[19]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 80.335 0 80.635 1 ;
+        RECT 76.735 0 77.035 2.91 ;
     END
-  END AD[20]
-  PIN AD[19]
+  END wbs_adr[19]
+  PIN wbs_adr[18]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 76.735 0 77.035 1 ;
+        RECT 73.135 0 73.435 2.91 ;
     END
-  END AD[19]
-  PIN AD[18]
+  END wbs_adr[18]
+  PIN wbs_adr[17]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 73.135 0 73.435 1 ;
+        RECT 69.535 0 69.835 2.91 ;
     END
-  END AD[18]
-  PIN AD[17]
+  END wbs_adr[17]
+  PIN wbs_adr[16]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 69.535 0 69.835 1 ;
+        RECT 65.935 0 66.235 2.91 ;
     END
-  END AD[17]
-  PIN AD[16]
+  END wbs_adr[16]
+  PIN wbs_adr[15]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 65.935 0 66.235 1 ;
+        RECT 62.335 0 62.635 2.91 ;
     END
-  END AD[16]
-  PIN AD[15]
+  END wbs_adr[15]
+  PIN wbs_adr[14]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 62.335 0 62.635 1 ;
+        RECT 58.735 0 59.035 2.91 ;
     END
-  END AD[15]
-  PIN AD[14]
+  END wbs_adr[14]
+  PIN wbs_adr[13]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 58.735 0 59.035 1 ;
+        RECT 55.135 0 55.435 2.91 ;
     END
-  END AD[14]
-  PIN AD[13]
+  END wbs_adr[13]
+  PIN wbs_adr[12]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 55.135 0 55.435 1 ;
+        RECT 51.535 0 51.835 2.91 ;
     END
-  END AD[13]
-  PIN AD[12]
+  END wbs_adr[12]
+  PIN wbs_adr[11]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 51.535 0 51.835 1 ;
+        RECT 47.935 0 48.235 2.91 ;
     END
-  END AD[12]
-  PIN AD[11]
+  END wbs_adr[11]
+  PIN user_clk
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 47.935 0 48.235 1 ;
+        RECT 132.13 0 132.43 2.91 ;
     END
-  END AD[11]
-  PIN AD[10]
+  END user_clk
+  PIN wbs_adr[31]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 44.335 0 44.635 1 ;
+        RECT 119.935 0 120.235 2.91 ;
     END
-  END AD[10]
-  PIN AD[9]
+  END wbs_adr[31]
+  PIN wbs_adr[10]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 40.735 0 41.035 1 ;
+        RECT 44.335 0 44.635 2.91 ;
     END
-  END AD[9]
-  PIN AD[8]
+  END wbs_adr[10]
+  PIN wbs_adr[7]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 37.135 0 37.435 1 ;
+        RECT 33.535 0 33.835 2.91 ;
     END
-  END AD[8]
-  PIN AD[7]
+  END wbs_adr[7]
+  PIN wbs_adr[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 33.535 0 33.835 1 ;
+        RECT 29.935 0 30.235 2.91 ;
     END
-  END AD[7]
-  PIN AD[6]
+  END wbs_adr[6]
+  PIN wbs_adr[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 29.935 0 30.235 1 ;
+        RECT 26.335 0 26.635 2.91 ;
     END
-  END AD[6]
-  PIN AD[5]
+  END wbs_adr[5]
+  PIN wbs_adr[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 26.335 0 26.635 1 ;
+        RECT 22.735 0 23.035 2.91 ;
     END
-  END AD[5]
-  PIN AD[4]
+  END wbs_adr[4]
+  PIN wbs_adr[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 22.735 0 23.035 1 ;
+        RECT 19.135 0 19.435 2.91 ;
     END
-  END AD[4]
-  PIN AD[3]
+  END wbs_adr[3]
+  PIN wbs_adr[30]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 19.135 0 19.435 1 ;
+        RECT 116.335 0 116.635 2.91 ;
     END
-  END AD[3]
-  PIN AD[2]
+  END wbs_adr[30]
+  PIN wbs_adr[29]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 15.535 0 15.835 1 ;
+        RECT 112.735 0 113.035 2.91 ;
     END
-  END AD[2]
-  PIN AD[1]
+  END wbs_adr[29]
+  PIN wbs_adr[9]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 11.935 0 12.235 1 ;
+        RECT 40.735 0 41.035 2.91 ;
     END
-  END AD[1]
-  PIN SEL[0]
+  END wbs_adr[9]
+  PIN wbs_sel_i[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 198.74 0 199.04 1 ;
+        RECT 209.54 0 209.84 2.91 ;
     END
-  END SEL[0]
-  PIN SEL[3]
+  END wbs_sel_i[3]
+  PIN wbs_sel_i[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 209.54 0 209.84 1 ;
+        RECT 205.94 0 206.24 2.91 ;
     END
-  END SEL[3]
-  PIN SEL[2]
+  END wbs_sel_i[2]
+  PIN wbs_sel_i[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 205.94 0 206.24 1 ;
+        RECT 202.34 0 202.64 2.91 ;
     END
-  END SEL[2]
-  PIN SEL[1]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 202.34 0 202.64 1 ;
-    END
-  END SEL[1]
-  PIN DO[0]
+  END wbs_sel_i[1]
+  PIN wbs_ack_o
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 256.805 0 257.105 1 ;
+        RECT 177.115 0 177.415 2.91 ;
     END
-  END DO[0]
-  PIN DO[31]
+  END wbs_ack_o
+  PIN wbs_dat_o[9]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 480.005 0 480.305 1 ;
+        RECT 321.605 0 321.905 2.91 ;
     END
-  END DO[31]
-  PIN DO[30]
+  END wbs_dat_o[9]
+  PIN wbs_dat_o[8]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 472.805 0 473.105 1 ;
+        RECT 314.405 0 314.705 2.91 ;
     END
-  END DO[30]
-  PIN DO[29]
+  END wbs_dat_o[8]
+  PIN wbs_dat_o[29]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 465.605 0 465.905 1 ;
+        RECT 465.605 0 465.905 2.91 ;
     END
-  END DO[29]
-  PIN DO[28]
+  END wbs_dat_o[29]
+  PIN wbs_dat_o[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 458.405 0 458.705 1 ;
+        RECT 271.205 0 271.505 2.91 ;
     END
-  END DO[28]
-  PIN DO[27]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 451.205 0 451.505 1 ;
-    END
-  END DO[27]
-  PIN DO[26]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 444.005 0 444.305 1 ;
-    END
-  END DO[26]
-  PIN DO[25]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 436.805 0 437.105 1 ;
-    END
-  END DO[25]
-  PIN DO[24]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 429.605 0 429.905 1 ;
-    END
-  END DO[24]
-  PIN DO[23]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 422.405 0 422.705 1 ;
-    END
-  END DO[23]
-  PIN DO[22]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 415.205 0 415.505 1 ;
-    END
-  END DO[22]
-  PIN DO[21]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 408.005 0 408.305 1 ;
-    END
-  END DO[21]
-  PIN DO[20]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 400.805 0 401.105 1 ;
-    END
-  END DO[20]
-  PIN DO[19]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 393.605 0 393.905 1 ;
-    END
-  END DO[19]
-  PIN DO[18]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 386.405 0 386.705 1 ;
-    END
-  END DO[18]
-  PIN DO[17]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 379.205 0 379.505 1 ;
-    END
-  END DO[17]
-  PIN DO[16]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 372.005 0 372.305 1 ;
-    END
-  END DO[16]
-  PIN DO[15]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 364.805 0 365.105 1 ;
-    END
-  END DO[15]
-  PIN DO[14]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 357.605 0 357.905 1 ;
-    END
-  END DO[14]
-  PIN DO[13]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 350.405 0 350.705 1 ;
-    END
-  END DO[13]
-  PIN DO[12]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 343.205 0 343.505 1 ;
-    END
-  END DO[12]
-  PIN DO[11]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 336.005 0 336.305 1 ;
-    END
-  END DO[11]
-  PIN DO[10]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 328.805 0 329.105 1 ;
-    END
-  END DO[10]
-  PIN DO[9]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 321.605 0 321.905 1 ;
-    END
-  END DO[9]
-  PIN DO[8]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 314.405 0 314.705 1 ;
-    END
-  END DO[8]
-  PIN DO[7]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 307.205 0 307.505 1 ;
-    END
-  END DO[7]
-  PIN DO[6]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 300.005 0 300.305 1 ;
-    END
-  END DO[6]
-  PIN DO[5]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 292.805 0 293.105 1 ;
-    END
-  END DO[5]
-  PIN DO[4]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 285.605 0 285.905 1 ;
-    END
-  END DO[4]
-  PIN DO[3]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 278.405 0 278.705 1 ;
-    END
-  END DO[3]
-  PIN DO[2]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 271.205 0 271.505 1 ;
-    END
-  END DO[2]
-  PIN DO[1]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 264.005 0 264.305 1 ;
-    END
-  END DO[1]
-  PIN CLK
+  END wbs_dat_o[2]
+  PIN wbs_dat_i[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 132.13 0 132.43 1 ;
+        RECT 260.405 0 260.705 2.91 ;
     END
-  END CLK
-  PIN RST
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 139.33 0 139.63 1 ;
-    END
-  END RST
-  PIN EN
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 135.73 0 136.03 1 ;
-    END
-  END EN
-  PIN R_WB
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 142.93 0 143.23 1 ;
-    END
-  END R_WB
-  PIN ACK
+  END wbs_dat_i[1]
+  PIN wbs_dat_o[28]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 177.115 0 177.415 1 ;
+        RECT 458.405 0 458.705 2.91 ;
     END
-  END ACK
+  END wbs_dat_o[28]
+  PIN wbs_dat_o[27]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 451.205 0 451.505 2.91 ;
+    END
+  END wbs_dat_o[27]
+  PIN wbs_dat_o[26]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 444.005 0 444.305 2.91 ;
+    END
+  END wbs_dat_o[26]
+  PIN wbs_dat_o[25]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 436.805 0 437.105 2.91 ;
+    END
+  END wbs_dat_o[25]
+  PIN wbs_dat_o[24]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 429.605 0 429.905 2.91 ;
+    END
+  END wbs_dat_o[24]
+  PIN wbs_dat_o[23]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 422.405 0 422.705 2.91 ;
+    END
+  END wbs_dat_o[23]
+  PIN wbs_dat_o[22]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 415.205 0 415.505 2.91 ;
+    END
+  END wbs_dat_o[22]
+  PIN wbs_dat_o[21]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 408.005 0 408.305 2.91 ;
+    END
+  END wbs_dat_o[21]
+  PIN wbs_dat_o[20]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 400.805 0 401.105 2.91 ;
+    END
+  END wbs_dat_o[20]
+  PIN wbs_dat_o[19]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 393.605 0 393.905 2.91 ;
+    END
+  END wbs_dat_o[19]
+  PIN wbs_dat_o[18]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 386.405 0 386.705 2.91 ;
+    END
+  END wbs_dat_o[18]
+  PIN wbs_dat_o[17]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 379.205 0 379.505 2.91 ;
+    END
+  END wbs_dat_o[17]
+  PIN wbs_dat_o[16]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 372.005 0 372.305 2.91 ;
+    END
+  END wbs_dat_o[16]
+  PIN wbs_dat_o[15]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 364.805 0 365.105 2.91 ;
+    END
+  END wbs_dat_o[15]
+  PIN wbs_dat_o[14]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 357.605 0 357.905 2.91 ;
+    END
+  END wbs_dat_o[14]
+  PIN wbs_dat_o[13]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 350.405 0 350.705 2.91 ;
+    END
+  END wbs_dat_o[13]
+  PIN wbs_dat_o[12]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 343.205 0 343.505 2.91 ;
+    END
+  END wbs_dat_o[12]
+  PIN wbs_dat_o[11]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 336.005 0 336.305 2.91 ;
+    END
+  END wbs_dat_o[11]
+  PIN wbs_dat_o[31]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 480.005 0 480.305 2.91 ;
+    END
+  END wbs_dat_o[31]
+  PIN wbs_dat_o[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 307.205 0 307.505 2.91 ;
+    END
+  END wbs_dat_o[7]
+  PIN wbs_dat_o[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 300.005 0 300.305 2.91 ;
+    END
+  END wbs_dat_o[6]
+  PIN wbs_dat_o[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 292.805 0 293.105 2.91 ;
+    END
+  END wbs_dat_o[5]
+  PIN wbs_dat_o[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 285.605 0 285.905 2.91 ;
+    END
+  END wbs_dat_o[4]
+  PIN wbs_dat_o[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 278.405 0 278.705 2.91 ;
+    END
+  END wbs_dat_o[3]
+  PIN wbs_dat_o[30]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 472.805 0 473.105 2.91 ;
+    END
+  END wbs_dat_o[30]
+  PIN wbs_dat_o[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 264.005 0 264.305 2.91 ;
+    END
+  END wbs_dat_o[1]
+  PIN wbs_dat_o[10]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 328.805 0 329.105 2.91 ;
+    END
+  END wbs_dat_o[10]
+  PIN user_rst
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 139.33 0 139.63 2.91 ;
+    END
+  END user_rst
+  PIN wb_rst_i
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 142.93 0 143.23 2.91 ;
+    END
+  END wb_rst_i
+  PIN wbs_clk_i
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 135.73 0 136.03 2.91 ;
+    END
+  END wbs_clk_i
+  PIN wbs_sel_i[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 198.74 0 199.04 2.91 ;
+    END
+  END wbs_sel_i[0]
+  PIN wbs_dat_o[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 256.805 0 257.105 2.91 ;
+    END
+  END wbs_dat_o[0]
   PIN TM
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 160.93 0 161.23 1 ;
+        RECT 160.93 0 161.23 2.91 ;
     END
   END TM
-  PIN SN
+  PIN wbs_stb_i
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 146.53 0 146.83 1 ;
+        RECT 164.53 0 164.83 2.91 ;
     END
-  END SN
+  END wbs_stb_i
   PIN ScanInCC
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 150.13 0 150.43 1 ;
+        RECT 150.13 0 150.43 2.91 ;
     END
   END ScanInCC
   PIN ScanInDL
@@ -876,7 +875,7 @@ MACRO BM130_NEURO_32X32
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 153.73 0 154.03 1 ;
+        RECT 153.73 0 154.03 2.91 ;
     END
   END ScanInDL
   PIN ScanInDR
@@ -884,7 +883,7 @@ MACRO BM130_NEURO_32X32
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 157.33 0 157.63 1 ;
+        RECT 157.33 0 157.63 2.91 ;
     END
   END ScanInDR
   PIN ScanOutCC
@@ -892,12 +891,12 @@ MACRO BM130_NEURO_32X32
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 180.715 0 181.015 1 ;
+        RECT 180.715 0 181.015 2.91 ;
     END
   END ScanOutCC
   PIN Iref
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 266.84 582.75 440.155 584.05 ;
@@ -909,7 +908,7 @@ MACRO BM130_NEURO_32X32
   END Iref
   PIN Vbias
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 266.84 589.275 440.155 590.405 ;
@@ -921,7 +920,7 @@ MACRO BM130_NEURO_32X32
   END Vbias
   PIN Vcomp
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 266.84 570.605 440.155 571.735 ;
@@ -933,7 +932,7 @@ MACRO BM130_NEURO_32X32
   END Vcomp
   PIN Bias_comp1
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 266.84 535.71 440.155 536.84 ;
@@ -941,7 +940,7 @@ MACRO BM130_NEURO_32X32
   END Bias_comp1
   PIN Bias_comp2
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 266.84 533.58 440.155 534.71 ;
@@ -949,7 +948,7 @@ MACRO BM130_NEURO_32X32
   END Bias_comp2
   PIN Ramp
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 266.84 528.705 440.155 529.835 ;
@@ -961,7 +960,7 @@ MACRO BM130_NEURO_32X32
   END Ramp
   PIN Vcc_L
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 609.385 744.76 760 745.1 ;
@@ -1245,7 +1244,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_L
   PIN Vcc_Body
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 0 627.04 760 628.04 ;
@@ -1285,7 +1284,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_Body
   PIN Vcc_reset
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 505.84 781.29 760 782.29 ;
@@ -1301,7 +1300,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_reset
   PIN Vcc_set
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 505.84 775.29 760 776.29 ;
@@ -1317,7 +1316,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_set
   PIN Vcc_wl_reset
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 0 781.29 196.06 782.29 ;
@@ -1333,7 +1332,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_wl_reset
   PIN Vcc_wl_set
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 0 775.29 196.06 776.29 ;
@@ -1349,7 +1348,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_wl_set
   PIN Vcc_wl_read
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 0 769.29 196.06 770.29 ;
@@ -1365,7 +1364,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_wl_read
   PIN Vcc_read
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 505.84 769.29 760 770.29 ;
@@ -1381,7 +1380,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_read
   PIN VSS
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE GROUND ;
     PORT
       LAYER met3 ;
         RECT 0 750.855 760 751.855 ;
@@ -2041,7 +2040,7 @@ MACRO BM130_NEURO_32X32
   END VDDC
   PIN VDDA
     DIRECTION INPUT ;
-    USE ANALOG ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 0 504.36 760 505.86 ;
@@ -2087,6 +2086,22 @@ MACRO BM130_NEURO_32X32
         RECT 0 579.83 760 581.33 ;
     END
   END VDDA
+  PIN wbs_cyc_i
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met2 ;
+        RECT 167.96 0 168.26 2.91 ;
+    END
+  END wbs_cyc_i
+  PIN wbs_adr[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 8.335 0 8.635 2.91 ;
+    END
+  END wbs_adr[0]
   OBS
     LAYER li ;
       RECT 0 0 760 950 ;
@@ -2095,7 +2110,7 @@ MACRO BM130_NEURO_32X32
     LAYER met1 ;
       RECT 0 0 760 950 ;
     LAYER met2 ;
-      RECT 0 0 760 950 ;
+      RECT 0 2 760 950 ;
     LAYER met3 ;
       RECT 0 0 760 950 ;
   END
