@@ -54,7 +54,7 @@ module wishbone_slave_interface (
   //------------------------------------------------------------------------------------------------
   // Generate Enable signal when a valid Wishbone transaction matches the specified address
   //------------------------------------------------------------------------------------------------
-  assign EN       = (wbs_stb_i && wbs_cyc_i && (wbs_adr_i == ADDR_MATCH) && (wbs_sel_i == 4'b0010));
+  assign EN       = (wbs_stb_i && wbs_cyc_i && (wbs_adr_i == ADDR_MATCH) && (wbs_sel_i == 4'b1111));
 
   //------------------------------------------------------------------------------------------------
   // Pass decoded Wishbone inputs to functional block (ReRAM core)

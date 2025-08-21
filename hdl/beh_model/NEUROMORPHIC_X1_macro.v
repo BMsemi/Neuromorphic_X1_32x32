@@ -60,8 +60,8 @@ module NEUROMORPHIC_X1_macro (
   //------------------------------------------------------------------------------------------------
   // Parameters: Configurable simulation delays
   //------------------------------------------------------------------------------------------------
-  parameter RD_Dly       = 44;  // Clock cycles delay before read data becomes valid
-  parameter WR_Dly       = 10;  // Write delay (simulate ~44K cycles for real chip)
+  parameter RD_Dly       = 0;  // Clock cycles delay before read data becomes valid
+  parameter WR_Dly       = 0;  // Write delay (simulate ~44K cycles for real chip)
   parameter RD_Data_hold = 1;   // Hold read data for this many cycles
 
   //------------------------------------------------------------------------------------------------
@@ -129,8 +129,8 @@ module NEUROMORPHIC_X1_macro (
   //------------------------------------------------------------------------------------------------
   // Main FSM: Reset, Write, Read
   //------------------------------------------------------------------------------------------------
-  always @(posedge CLKin or negedge RSTin) begin
-    if (!RSTin) begin
+  always @(posedge CLKin or posedge RSTin) begin
+    if (RSTin) begin
       // Asynchronous reset
       func_ack <= 1'b0;
       DO       <= 32'd0;
@@ -152,7 +152,7 @@ module NEUROMORPHIC_X1_macro (
       //--------------------------------------------------------------------------------------------
       // WRITE OPERATION: Valid EN + Write mode
       //--------------------------------------------------------------------------------------------
-      if (EN && !R_WB && count < 32) begin
+      if (EN && R_WB && count < 32) begin
         push_ip_queue(DI);                    // Add data to write queue
         count = count + 1;
         wr_count = wr_count + 1;
@@ -172,7 +172,7 @@ module NEUROMORPHIC_X1_macro (
       //--------------------------------------------------------------------------------------------
       // READ OPERATION: Valid EN + Read mode + data available
       //--------------------------------------------------------------------------------------------
-      end else if (EN && R_WB && array_queue_size > 0) begin
+      end else if (EN && !R_WB && array_queue_size > 0) begin
         // Simulate programmable delay before data available
         for (i = 0; i < RD_Dly; i = i + 1) begin
           @(posedge CLKin);
