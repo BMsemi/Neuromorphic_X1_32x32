@@ -18,6 +18,8 @@
 `timescale 1ns / 1ps
 
 module ReRAM_Wishbone_Interface (
+  input         user_clk,     // Wishbone clock
+  input         user_rst,     // Wishbone clock
   input         wb_clk_i,     // Wishbone clock
   input         wb_rst_i,     // Wishbone reset (active low)
   input         wbs_stb_i,    // Wishbone strobe
