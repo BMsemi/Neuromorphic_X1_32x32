@@ -27,58 +27,24 @@
 
 `timescale 1ns / 1ps
 
-module NEUROMORPHIC_X1_macro (
-  user_clk, user_rst, wb_clk_i, wb_rst_i, wb_adr_i, wb_dat_i, wb_cyc_i, wb_stb_i, wb_we_i, wb_sel_i, 
-  ScanInCC, ScanInDL, ScanInDR, ScanOutCC,
-  TM, wbs_dat_o, wbs_ack_o, 
-  VDDC, VSS, Iref, Vbias, Vcomp, Bias_comp1, Bias_comp2, Ramp, 
-  Vcc_L, Vcc_Body, VCC_reset, VCC_set, VCC_wl_reset, VCC_wl_set, VCC_wl_read, VCC_read, VDDA
+module Neuromorphic_X1_wb (
+  // Clocks & resets
+  input         user_clk,     // user clock
+  input         user_rst,     // user reset
+  input         wb_clk_i,     // Wishbone clock
+  input         wb_rst_i,     // Wishbone reset (Active High)
+
+  // Wishbone inputs
+  input         wbs_stb_i,    // Wishbone strobe
+  input         wbs_cyc_i,    // Wishbone cycle indicator
+  input         wbs_we_i,     // Wishbone write enable: 1=write, 0=read
+  input  [3:0]  wbs_sel_i,    // Wishbone byte select (must be 4'hF for 32-bit op)
+  input  [31:0] wbs_dat_i,    // Wishbone write data (becomes DI to core)
+  input  [31:0] wbs_adr_i,    // Wishbone address
+
+  // Wishbone outputs
+  output [31:0] wbs_dat_o,    // Wishbone read data output (driven by DO from core)
+  output        wbs_ack_o     // Wishbone acknowledge output (core_ack from core)
 );
-
-  //--------------------------------------
-  // Inputs
-  //--------------------------------------
-  input         user_clk;       // Clock input
-  input         user_rst;       // Reset input
-  input         wb_clk_i;       // Wishbone clock input
-  input         wb_rst_i;       // Wishbone reset input
-  input  [31:0] wb_adr_i;       // Wishbone address input
-  input  [31:0] wb_dat_i;       // Wishbone data input
-  input         wb_cyc_i;       // Wishbone cycle input
-  input         wb_stb_i;       // Wishbone strobe input
-  input         wb_we_i;        // Wishbone write enable input
-  input  [3:0]  wb_sel_i;       // Wishbone select input
-
-  input         ScanInCC;       // Scan chain input for clock control
-  input         ScanInDL;       // Scan chain input for delay line
-  input         ScanInDR;       // Scan chain input for data register
-
-  input         TM;             // Test mode input
-  
-  // Analog power and control inputs
-  input         VDDC;           // Digital power supply
-  input         VSS;            // Ground
-  input         Iref;           // Reference current
-  input         Vbias;          // Bias voltage
-  input         Vcomp;          // Compensation voltage
-  input         Bias_comp1;     // Bias comparator 1
-  input         Bias_comp2;     // Bias comparator 2
-  input         Ramp;           // Ramp signal
-  input         Vcc_L;          // Low voltage supply
-  input         Vcc_Body;       // Body voltage supply
-  input         VCC_reset;      // Power supply reset
-  input         VCC_set;        // Power supply set
-  input         VCC_wl_reset;   // Word line reset
-  input         VCC_wl_set;     // Word line set
-  input         VCC_wl_read;    // Word line read
-  input         VCC_read;       // Read voltage supply
-  input         VDDA;           // Analog power supply
-
-  //--------------------------------------
-  // Outputs
-  //--------------------------------------
-  output [31:0] wbs_dat_o;      // Wishbone data output
-  output        wbs_ack_o;      // Wishbone acknowledge output
-  output        ScanOutCC;      // Scan chain output for clock control
 
 endmodule
