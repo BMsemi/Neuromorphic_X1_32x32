@@ -1,13 +1,13 @@
 info:
   name: Neuromorphic_X1
   description: Commercial 32x32 1T1R Analog In-Memory Compute Macro
-  repo: https://github.com/BMsemi/Neuromorphic_X1_main
+  repo: https://github.com/BMsemi/Neuromorphic_X1_32x32
   owner: BM LABS
   license: Apache-2.0
   author: BM LABS
   email: samarthjain@bmsemi.org
-  version: v1.0.0
-  date: 12-08-2025
+  version: v1.0.1
+  date: 27-08-2025
   category: analog
   tags:
     - neuromorphic
