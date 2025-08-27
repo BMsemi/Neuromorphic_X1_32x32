@@ -78,7 +78,7 @@ module Neuromorphic_X1 (
 );
   
 	parameter RD_Dly       = 44;  // Clock cycles delay before read data becomes valid
-	parameter WR_Dly       = 200; // Write delay (simulate ~44K cycles for real chip)
+	parameter WR_Dly       = 200; // Write delay (simulate ~1K cycles for real chip)
 	
 	integer i,j;
 	integer arry_row,arry_col;
