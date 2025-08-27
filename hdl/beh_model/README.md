@@ -6,7 +6,7 @@ Address used: 0x3000_000C
 ---------------------------------------------------------------------
 1) What this is
 ---------------------------------------------------------------------
-This is a simple, non-synthesizable behavioral model of a 32×32 1‑bit
+This is a non-synthesizable behavioral model of a 32×32 1‑bit
 array with a Wishbone shim in front. It is meant for simulation.
 It shows how software can send “commands” over Wishbone to program
 a cell or request a read, and how read data is returned later.
@@ -91,7 +91,7 @@ simulation easy to understand.
 • If op_fifo is empty, the core holds ACK LOW and the master waits.
 
 Default delays in the code:
-  parameter WR_Dly = 10;  // PROGRAM latency (in CLKin cycles)
+  parameter WR_Dly = 200;  // PROGRAM latency (in CLKin cycles), Note in real chip one cell takes ~44000 cycles to program due to write-verify.
   parameter RD_Dly = 44;  // READ latency (in CLKin cycles)
 
 ---------------------------------------------------------------------
