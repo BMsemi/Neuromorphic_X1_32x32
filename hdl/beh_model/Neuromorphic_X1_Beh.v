@@ -117,13 +117,6 @@ module Neuromorphic_X1 (
 			op_fifo_addr_1 <= 0;
 			DI_local <= 0;
 			DO_local <= 0;
-			
-			// init array to 0
-			for (arry_row = 0; arry_row < 32; arry_row = arry_row + 1) begin
-        for (arry_col = 0; arry_col < 32; arry_col = arry_col + 1) begin
-          array_mem[arry_row][arry_col] = 1'b0;
-        end
-      end
 
 		end else begin
 		  
@@ -188,6 +181,15 @@ module Neuromorphic_X1 (
 		  end
 			// FORMING/NOP not implemented in this minimal version
 	  end
+	end
+	
+	initial begin
+	 	// init array to 0
+		for (arry_row = 0; arry_row < 32; arry_row = arry_row + 1) begin
+       for (arry_col = 0; arry_col < 32; arry_col = arry_col + 1) begin
+         array_mem[arry_row][arry_col] = 1'b0;
+       end
+     end
 	end
 
 endmodule
