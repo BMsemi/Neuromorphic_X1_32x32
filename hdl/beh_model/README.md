@@ -113,7 +113,7 @@ All delays are done with `@(posedge CLKin)` loops to keep the simulation simple.
 
 ## 6) Bring-up & Expectations
 
-- **On reset**, the array initializes to `0`, and both FIFOs are empty.
+- **On reset**, both FIFOs are empty, but array will persist.
 - **Before any PROGRAM**, a READ of a location will eventually return `0`.
 - **After a PROGRAM**, the bit persists (non-volatile behavior in simulation).
 
@@ -175,7 +175,7 @@ It also checks that **ACK only pulses** when the operation occurs (accepting a c
   
 - **Depths**: The FIFOs are hard-coded at 32 in this simple model.
   
-- **FORMING**: If you want **MODE=10** behavior, you can add a branch in the engine to handle a forming latency/state before the first PROGRAM (Not Implemented).
+- **FORMING**: **MODE=10** not implemented in simulator 
 
 ---
 
