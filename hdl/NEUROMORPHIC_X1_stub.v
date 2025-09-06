@@ -1,4 +1,11 @@
-module Neuromorphic_X1_stub (
+module Neuromorphic_X1_wb (
+ 
+ `ifdef USE_POWER_PINS
+   inout         VSS,            // 0 V analog ground
+   inout         VDDA,           // 1.8 V analog supply (mapped to vdda1)
+   inout         VDDC,           // 1.8 V analog core digital supply (mapped to vccd1)
+ `endif
+ 
     // Clocks & resets
     input         user_clk,       // user clock
     input         user_rst,       // user reset (Active Low)
@@ -25,15 +32,14 @@ module Neuromorphic_X1_stub (
     output        ScanOutCC,      // Data scan chain output
 
     // Analog Pins
-    input         Iref,           // 100 µA current reference
-    input         VSS,            // 0 V analog ground
+    input         Iref,           // 100 ÂµA current reference
+    
     input         Vcc_read,       // 0.3 V read rail
     input         Vcomp,          // 0.6 V comparator/reference bias
     input         Bias_comp2,     // 0.6 V comparator bias
     input         Vcc_wl_read,    // 0.7 V wordline read rail
     input         Vcc_wl_set,     // 1.8 V wordline set rail
-    input         VDDA,           // 1.8 V analog supply (mapped to vdda1)
-    input         VDDC,           // 1.8 V analog core digital supply (mapped to vccd1)
+    
     input         Vbias,          // 1.8 V analog bias
     input         Vcc_wl_reset,   // 2.6 V wordline reset rail
     input         Vcc_set,        // 3.3 V array set rail
