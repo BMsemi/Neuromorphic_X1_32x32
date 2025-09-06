@@ -2,10 +2,11 @@ VERSION 5.7 ;
 NOWIREEXTENSIONATPIN ON ;
 BUSBITCHARS "[]" ;
 DIVIDERCHAR "/" ;
-MACRO BM130_NEURO_32X32
+MACRO Neuromorphic_X1_wb
   ORIGIN 0 0 ;
-  FOREIGN BM130_NEURO_32X32 0 0 ;
-  SIZE 760 BY 950 ;
+  FOREIGN Neuromorphic_X1_wb 0 0 ;
+  SIZE 500.020 BY 584.800 ;
+  SITE unithd ;
   PIN wbs_we_i
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -262,174 +263,174 @@ MACRO BM130_NEURO_32X32
         RECT 267.605 0 267.905 2.91 ;
     END
   END wbs_dat_i[2]
-  PIN wbs_adr[1]
+  PIN wbs_adr_i[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 11.935 0 12.235 2.91 ;
     END
-  END wbs_adr[1]
-  PIN wbs_adr[8]
+  END wbs_adr_i[1]
+  PIN wbs_adr_i[8]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 37.135 0 37.435 2.91 ;
     END
-  END wbs_adr[8]
-  PIN wbs_adr[2]
+  END wbs_adr_i[8]
+  PIN wbs_adr_i[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 15.535 0 15.835 2.91 ;
     END
-  END wbs_adr[2]
-  PIN wbs_adr[28]
+  END wbs_adr_i[2]
+  PIN wbs_adr_i[28]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 109.135 0 109.435 2.91 ;
     END
-  END wbs_adr[28]
-  PIN wbs_adr[27]
+  END wbs_adr_i[28]
+  PIN wbs_adr_i[27]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 105.535 0 105.835 2.91 ;
     END
-  END wbs_adr[27]
-  PIN wbs_adr[26]
+  END wbs_adr_i[27]
+  PIN wbs_adr_i[26]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 101.935 0 102.235 2.91 ;
     END
-  END wbs_adr[26]
-  PIN wbs_adr[25]
+  END wbs_adr_i[26]
+  PIN wbs_adr_i[25]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 98.335 0 98.635 2.91 ;
     END
-  END wbs_adr[25]
-  PIN wbs_adr[24]
+  END wbs_adr_i[25]
+  PIN wbs_adr_i[24]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 94.735 0 95.035 2.91 ;
     END
-  END wbs_adr[24]
-  PIN wbs_adr[23]
+  END wbs_adr_i[24]
+  PIN wbs_adr_i[23]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 91.135 0 91.435 2.91 ;
     END
-  END wbs_adr[23]
-  PIN wbs_adr[22]
+  END wbs_adr_i[23]
+  PIN wbs_adr_i[22]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 87.535 0 87.835 2.91 ;
     END
-  END wbs_adr[22]
-  PIN wbs_adr[21]
+  END wbs_adr_i[22]
+  PIN wbs_adr_i[21]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 83.935 0 84.235 2.91 ;
     END
-  END wbs_adr[21]
-  PIN wbs_adr[20]
+  END wbs_adr_i[21]
+  PIN wbs_adr_i[20]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 80.335 0 80.635 2.91 ;
     END
-  END wbs_adr[20]
-  PIN wbs_adr[19]
+  END wbs_adr_i[20]
+  PIN wbs_adr_i[19]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 76.735 0 77.035 2.91 ;
     END
-  END wbs_adr[19]
-  PIN wbs_adr[18]
+  END wbs_adr_i[19]
+  PIN wbs_adr_i[18]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 73.135 0 73.435 2.91 ;
     END
-  END wbs_adr[18]
-  PIN wbs_adr[17]
+  END wbs_adr_i[18]
+  PIN wbs_adr_i[17]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 69.535 0 69.835 2.91 ;
     END
-  END wbs_adr[17]
-  PIN wbs_adr[16]
+  END wbs_adr_i[17]
+  PIN wbs_adr_i[16]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 65.935 0 66.235 2.91 ;
     END
-  END wbs_adr[16]
-  PIN wbs_adr[15]
+  END wbs_adr_i[16]
+  PIN wbs_adr_i[15]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 62.335 0 62.635 2.91 ;
     END
-  END wbs_adr[15]
-  PIN wbs_adr[14]
+  END wbs_adr_i[15]
+  PIN wbs_adr_i[14]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 58.735 0 59.035 2.91 ;
     END
-  END wbs_adr[14]
-  PIN wbs_adr[13]
+  END wbs_adr_i[14]
+  PIN wbs_adr_i[13]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 55.135 0 55.435 2.91 ;
     END
-  END wbs_adr[13]
-  PIN wbs_adr[12]
+  END wbs_adr_i[13]
+  PIN wbs_adr_i[12]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 51.535 0 51.835 2.91 ;
     END
-  END wbs_adr[12]
-  PIN wbs_adr[11]
+  END wbs_adr_i[12]
+  PIN wbs_adr_i[11]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 47.935 0 48.235 2.91 ;
     END
-  END wbs_adr[11]
+  END wbs_adr_i[11]
   PIN user_clk
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -438,86 +439,86 @@ MACRO BM130_NEURO_32X32
         RECT 132.13 0 132.43 2.91 ;
     END
   END user_clk
-  PIN wbs_adr[31]
+  PIN wbs_adr_i[31]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 119.935 0 120.235 2.91 ;
     END
-  END wbs_adr[31]
-  PIN wbs_adr[10]
+  END wbs_adr_i[31]
+  PIN wbs_adr_i[10]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 44.335 0 44.635 2.91 ;
     END
-  END wbs_adr[10]
-  PIN wbs_adr[7]
+  END wbs_adr_i[10]
+  PIN wbs_adr_i[7]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 33.535 0 33.835 2.91 ;
     END
-  END wbs_adr[7]
-  PIN wbs_adr[6]
+  END wbs_adr_i[7]
+  PIN wbs_adr_i[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 29.935 0 30.235 2.91 ;
     END
-  END wbs_adr[6]
-  PIN wbs_adr[5]
+  END wbs_adr_i[6]
+  PIN wbs_adr_i[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 26.335 0 26.635 2.91 ;
     END
-  END wbs_adr[5]
-  PIN wbs_adr[4]
+  END wbs_adr_i[5]
+  PIN wbs_adr_i[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 22.735 0 23.035 2.91 ;
     END
-  END wbs_adr[4]
-  PIN wbs_adr[3]
+  END wbs_adr_i[4]
+  PIN wbs_adr_i[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 19.135 0 19.435 2.91 ;
     END
-  END wbs_adr[3]
-  PIN wbs_adr[30]
+  END wbs_adr_i[3]
+  PIN wbs_adr_i[30]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 116.335 0 116.635 2.91 ;
     END
-  END wbs_adr[30]
-  PIN wbs_adr[29]
+  END wbs_adr_i[30]
+  PIN wbs_adr_i[29]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 112.735 0 113.035 2.91 ;
     END
-  END wbs_adr[29]
-  PIN wbs_adr[9]
+  END wbs_adr_i[29]
+  PIN wbs_adr_i[9]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 40.735 0 41.035 2.91 ;
     END
-  END wbs_adr[9]
+  END wbs_adr_i[9]
   PIN wbs_sel_i[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -822,14 +823,14 @@ MACRO BM130_NEURO_32X32
         RECT 142.93 0 143.23 2.91 ;
     END
   END wb_rst_i
-  PIN wbs_clk_i
+  PIN wb_clk_i
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 135.73 0 136.03 2.91 ;
     END
-  END wbs_clk_i
+  END wb_clk_i
   PIN wbs_sel_i[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -896,7 +897,7 @@ MACRO BM130_NEURO_32X32
   END ScanOutCC
   PIN Iref
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 266.84 582.75 440.155 584.05 ;
@@ -908,7 +909,7 @@ MACRO BM130_NEURO_32X32
   END Iref
   PIN Vbias
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 266.84 589.275 440.155 590.405 ;
@@ -920,7 +921,7 @@ MACRO BM130_NEURO_32X32
   END Vbias
   PIN Vcomp
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 266.84 570.605 440.155 571.735 ;
@@ -930,37 +931,17 @@ MACRO BM130_NEURO_32X32
         RECT 266.84 572.235 440.155 573.365 ;
     END
   END Vcomp
-  PIN Bias_comp1
-    DIRECTION INPUT ;
-    USE POWER ;
-    PORT
-      LAYER met3 ;
-        RECT 266.84 535.71 440.155 536.84 ;
-    END
-  END Bias_comp1
   PIN Bias_comp2
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 266.84 533.58 440.155 534.71 ;
     END
   END Bias_comp2
-  PIN Ramp
-    DIRECTION INPUT ;
-    USE POWER ;
-    PORT
-      LAYER met3 ;
-        RECT 266.84 528.705 440.155 529.835 ;
-    END
-    PORT
-      LAYER met3 ;
-        RECT 266.84 530.335 440.155 531.465 ;
-    END
-  END Ramp
   PIN Vcc_L
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 609.385 744.76 760 745.1 ;
@@ -1244,7 +1225,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_L
   PIN Vcc_Body
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0 627.04 760 628.04 ;
@@ -1284,7 +1265,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_Body
   PIN Vcc_reset
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 505.84 781.29 760 782.29 ;
@@ -1300,7 +1281,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_reset
   PIN Vcc_set
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 505.84 775.29 760 776.29 ;
@@ -1316,7 +1297,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_set
   PIN Vcc_wl_reset
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0 781.29 196.06 782.29 ;
@@ -1332,7 +1313,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_wl_reset
   PIN Vcc_wl_set
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0 775.29 196.06 776.29 ;
@@ -1348,7 +1329,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_wl_set
   PIN Vcc_wl_read
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0 769.29 196.06 770.29 ;
@@ -1364,7 +1345,7 @@ MACRO BM130_NEURO_32X32
   END Vcc_wl_read
   PIN Vcc_read
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 505.84 769.29 760 770.29 ;
@@ -1379,7 +1360,7 @@ MACRO BM130_NEURO_32X32
     END
   END Vcc_read
   PIN VSS
-    DIRECTION INPUT ;
+    DIRECTION INOUT ;
     USE GROUND ;
     PORT
       LAYER met3 ;
@@ -1742,9 +1723,18 @@ MACRO BM130_NEURO_32X32
         RECT 0 907.655 760 908.655 ;
     END
   END VSS
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met3 ;
+        RECT 0 750.855 760 751.855 ;
+    END
+  END VGND
+
   PIN VDDC
-    DIRECTION INPUT ;
-    USE ANALOG ;
+    DIRECTION INOUT ;
+    USE POWER ;
     PORT
       LAYER met3 ;
         RECT 636.045 746.4 760 746.74 ;
@@ -2039,7 +2029,7 @@ MACRO BM130_NEURO_32X32
     END
   END VDDC
   PIN VDDA
-    DIRECTION INPUT ;
+    DIRECTION INOUT ;
     USE POWER ;
     PORT
       LAYER met3 ;
@@ -2088,32 +2078,28 @@ MACRO BM130_NEURO_32X32
   END VDDA
   PIN wbs_cyc_i
     DIRECTION INPUT ;
-    USE POWER ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 167.96 0 168.26 2.91 ;
     END
   END wbs_cyc_i
-  PIN wbs_adr[0]
+  PIN wbs_adr_i[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 8.335 0 8.635 2.91 ;
     END
-  END wbs_adr[0]
+  END wbs_adr_i[0]
   OBS
-    LAYER li ;
-      RECT 0 0 760 950 ;
-    LAYER met4 ;
-      RECT 240.955 351.84 453.11 526.085 ;
-    LAYER met1 ;
-      RECT 0 0 760 950 ;
-    LAYER met2 ;
-      RECT 0 2 760 950 ;
-    LAYER met3 ;
-      RECT 0 0 760 950 ;
+    LAYER li1 ;  RECT 0 0 500.020 584.800 ;
+    LAYER met1 ; RECT 0 0 500.020 584.800 ;
+    LAYER via1 ; RECT 0 0 500.020 584.800 ;
+    LAYER met2 ; RECT 0 0 500.020 584.800 ;
+    LAYER via2 ; RECT 0 0 500.020 584.800 ;
+    LAYER met3 ; RECT 0 0 500.020 584.800 ;
   END
-END BM130_NEURO_32X32
+END Neuromorphic_X1_wb
 
 END LIBRARY

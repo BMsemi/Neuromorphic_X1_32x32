@@ -1,4 +1,4 @@
-library (BM130_NEURO_32X32 ){
+library (Neuromorphic_X1_wb ){
   delay_model : table_lookup;
   date : "Wed Aug 20 09:31:29 2025" ;
   revision : "1.0" ;
@@ -126,8 +126,8 @@ library (BM130_NEURO_32X32 ){
   
   /* end of header section */
   
-  /* Start Design BM130_NEURO_32X32 */
-  cell (BM130_NEURO_32X32 ) { 
+  /* Start Design Neuromorphic_X1_wb */
+  cell (Neuromorphic_X1_wb ) { 
     area :  722000 ;
     cell_leakage_power :  2.3025;
     dont_touch : true ;
@@ -143,6 +143,154 @@ library (BM130_NEURO_32X32 ){
       bit_to :  0;
       downto : true ;
     }
+    
+pin (TM) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (ScanInCC) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (VDDC) {
+  direction : inout;
+  capacitance : 0.01;
+  max_transition : 0.50;
+  signal_type : POWER;
+}
+
+pg_pin(VDDC) {
+  pg_type : primary_power;
+}
+
+pin (VSS) {
+  direction : inout;
+  capacitance : 0.01;
+  max_transition : 0.50;
+  signal_type : GROUND;
+}
+
+pg_pin(VSS) {
+  pg_type : primary_ground;
+}
+
+pin (VGND) {
+  direction : inout;
+  capacitance : 0.01;
+  max_transition : 0.50;
+  signal_type : GROUND;
+}
+
+pg_pin(VGND) {
+  pg_type : primary_ground;
+}
+
+pin (VDDA) {
+  direction : inout;
+  capacitance : 0.01;
+  max_transition : 0.50;
+  signal_type : POWER;
+}
+
+pg_pin(VDDA) {
+  pg_type : primary_power;
+}
+
+pin (Iref) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Vbias) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Vcomp) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Bias_comp2) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Vcc_L) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Vcc_Body) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Vcc_reset) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Vcc_set) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Vcc_wl_reset) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Vcc_wl_set) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Vcc_wl_read) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (Vcc_read) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (ScanInDL) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+/* If you also get warnings for these, add them too: */
+pin (ScanInDR) {
+  direction : input;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
+pin (ScanOutCC) {
+  direction : output;
+  capacitance : 0.01;
+  max_transition : 0.50;
+}
+
     bus (wbs_dat_o ){
       bus_type :  bus0 ;
       
@@ -343,6 +491,7 @@ library (BM130_NEURO_32X32 ){
         function :  "0" ;
         
       } /* End of pin wbs_dat_o[14] */
+      
       
       /* Start of pin wbs_dat_o[13] */ 
       pin (wbs_dat_o[13] ) { 
@@ -3965,6 +4114,6 @@ library (BM130_NEURO_32X32 ){
       
     } /* End of pin user_clk */
     
-  } /* End of Design BM130_NEURO_32X32 */
+  } /* End of Design Neuromorphic_X1_wb */
   
 } /* End of Library */

@@ -1,12 +1,11 @@
 vlib work
 vmap work work
 
-vlog +acc +sv wishbone_slave_interface.v NEUROMORPHIC_X1_macro.v NEUROMORPHIC_X1.v ReRAM_Wishbone_Interface.v tb_ReRAM_Wishbone_Interface.v
+vlog +acc +sv Neuromorphic_X1_Beh.v Neuromorphic_X1_wb_tb.v
 
-vsim work.tb_ReRAM_Wishbone_Interface
+vsim work.Neuromorphic_X1_wb_tb
 
-add wave -position insertpoint sim:/tb_ReRAM_Wishbone_Interface/*
-add wave -position insertpoint sim:/tb_ReRAM_Wishbone_Interface/dut/wishbone_if/*
-add wave -position insertpoint sim:/tb_ReRAM_Wishbone_Interface/dut/functional/NEUROMORPHIC_X1_inst/*
+add wave -position insertpoint sim:/Neuromorphic_X1_wb_tb/*
+add wave -position insertpoint sim:/Neuromorphic_X1_wb_tb/dut/core_inst/*
 
 run -all
